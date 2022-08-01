@@ -1,0 +1,14 @@
+.selektor1 {float: left; width: 100px; border: 110px groove blueviolet;
+            }
+
+.selektor2 {float: right; border: 50px inset cyan; 
+            }
+
+.selektor3 {float: right; border: 25px dashed chartreuse;
+            }
+
+.selektor4 {float: left; width: 600px; border: 200px outset rgb(255, 0, 128);
+            }
+
+.selektor5 {float: right; border: 12.5px dotted indianred;
+            }

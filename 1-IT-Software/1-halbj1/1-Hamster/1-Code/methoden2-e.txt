@@ -1,0 +1,21 @@
+void main(){
+	
+}
+
+void rechtsUm(){
+	for(int i=0;i<3;i++){
+		linksUm();
+	}
+}
+
+void nimmAlle(){
+	while(kornDa()){
+		nimm();
+	}
+}
+
+void ganzVor(){
+	while(vornFrei()){
+		vor();
+	}
+}

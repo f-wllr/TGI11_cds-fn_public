@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sea of Thieves Wiki - Nahrung</title>
+        <link rel="stylesheet" type="text/css" href="style-main.css">
+        <link rel="icon" href="Pictures\logo_f-wllr_selfmade_round-kl.png">
+          </head>
+    
+    <body>
+      <!--Head-->
+      <div id="border">
+        <div  class="header" id="header">
+          <div id="title">
+            <h1><a href=main.html>Sea of Thieves</a></h1>
+          </div>
+          <div id="menue">
+            <div class="menue">
+              <h2><a href=boats.html>Schiffe</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=weapons.html>Waffen</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=food.html>Nahrung</a></h2>
+            </div>
+          </div>
+        </div>
+
+        <!--"normal" main content-->
+        <div id="main-content" class="content">
+            <img id="pic-one" src="Pictures\29095558208_9cc9ecc382_o.jpg">
+          <p>
+            In diesem Artikel wird das Essen behandelt
+          </p>
+
+          <br><br><br>
+
+          <p>
+            In Sea of Thieves gibt es verschiedene Arten von Nahrung. Nahrung wird benötigt um sich zu heilen. Fleisch und Fisch gibt dabei am meisten. <br>
+            Als vegetarische Alternative stehen Obst und Gemüse zur vefrügung. In Folgender Tabelle stehen Werte, wie viel Leben durch essen regeneriert werden kann.<br>
+         </p>
+         <table>
+          <tr>
+            <th>Art</th>
+            <th>Name</th>
+            <th>Regenerierungsrate</th>
+            <th>Bild</th>
+          </tr>
+          <tr>
+            <td>Obst</td>
+            <td>Banane</td>
+            <td>+20%</td>
+            <td><img src="Pictures\food\banana.png"></td>
+           </tr>
+           <tr>
+             <td> </td>
+             <td>Kokosnuss</td>
+             <td>+30%</td>
+             <td><img src="Pictures\food\coconut.png"></td>
+           </tr>
+           <tr>
+            <td> </td>
+            <td>Granatapfel</td>
+            <td>+40%</td>
+            <td><img src="Pictures\food\granapfel.png"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td>Mango</td>
+            <td>+50%</td>
+            <td><img src="Pictures\food\mango.png"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td>Ananas</td>
+            <td>+100%</td>
+            <td><img src="Pictures\food\pinapple.png"></td>
+          </tr>
+          </tr>
+          <tr>
+            <td>Fleisch </td>
+            <td>Huhn/Schlange</td>
+            <td>+50%</td>
+            <td><img src="Pictures\food\meat-1.png"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td>Megalodon/Kraken</td>
+            <td>+100%</td>
+            <td><img src="Pictures\food\meat-2.png"></td>
+          </tr>
+          <tr>
+            <td>Fisch</td>
+            <td>Normaler Fisch</td>
+            <td>+30%</td>
+            <td><img src="Pictures\food\fish-1.png"></td>
+          </tr>
+          <tr>
+            <td> </td>
+            <td>Seltener Fisch</td>
+            <td>+75%</td>
+            <td><img src="Pictures\food\fish-2.png"></td>
+          </tr>
+        </table>
+       </div>
+      </div>
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        //var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > header.offsetTop) {
+            header.classList.add("sticky");
+            console.log("added class sticky");
+          } else {
+            header.classList.remove("sticky");
+            console.log("removed class sticky");
+          }
+        }
+      </script>
+    </body>
+
+</html>

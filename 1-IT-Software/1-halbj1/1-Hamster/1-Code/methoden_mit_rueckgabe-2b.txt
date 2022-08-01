@@ -1,0 +1,29 @@
+void main() {
+ 	int breite = zähleFelder();
+ 	linksUm();
+ 	int höhe = zähleFelder();
+ 	
+ 	int anzFelder = breite * höhe;
+ 	
+ 	System.out.println("Das Gehege hat " + anzFelder + " Felder");
+}
+
+int nimmUndZähle(){
+	int anzahl = 0;
+	while(kornDa()){
+		nimm();
+		anzahl = anzahl + 1;
+	}
+	System.out.println(anzahl + " Körner");
+	return anzahl; // z.B. 1
+}
+
+int zähleFelder(){
+	int anzFelder = 1;
+	while(vornFrei()){
+		vor();
+		anzFelder++;
+	}
+	System.out.println(anzFelder + " Felder");
+	return anzFelder;
+}

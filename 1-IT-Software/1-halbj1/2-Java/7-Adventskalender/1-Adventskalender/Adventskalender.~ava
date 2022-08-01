@@ -1,0 +1,20 @@
+/**
+ *
+ * Beschreibung
+ *
+ * @version 1.0 vom 16.12.2021
+ * @author 
+ */
+
+public class Adventskalender {
+  
+  public static void main(String[] args) {
+    for (int z = 1; z < 7; z++) {
+      for (int s = 0; s < 5; s++) {
+        
+      }
+    }
+  } // end of main
+
+} // end of class Adventskalender
+

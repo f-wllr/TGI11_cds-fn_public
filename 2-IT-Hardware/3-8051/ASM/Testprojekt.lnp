@@ -1,0 +1,3 @@
+"16-LEDs.obj" 
+TO "Testprojekt" 
+PRINT(".\Listings\Testprojekt.m51") RAMSIZE(256) 

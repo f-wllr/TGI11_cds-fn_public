@@ -1,0 +1,6 @@
+1. Programm Starten: Keil u vision
+2. Projekt erstellen: z.B. Interrupt
+3. Prozessor Auswählen: C5131A
+4. Ja
+5. Rechtsclick "Target 1" -> options -> Output -> "create HEX File" und 12 mhz Takt in device auswählen
+6. Rechtsclick "Source Group 1" -> create new object -> asm File

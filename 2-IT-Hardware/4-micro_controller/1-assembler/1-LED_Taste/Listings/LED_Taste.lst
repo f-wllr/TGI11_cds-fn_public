@@ -1,0 +1,57 @@
+A51 MACRO ASSEMBLER  LED_TASTE                                                            05/10/2022 15:01:17 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Objects\LED_Taste.obj
+ASSEMBLER INVOKED BY: C:\Program Files\Keil_uVision\C51\BIN\A51.EXE LED_Taste.a51 SET(SMALL) DEBUG PRINT(.\Listings\LED_
+                      Taste.lst) OBJECT(.\Objects\LED_Taste.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+0000                   2     LABEL1:
+0000 740F              3     MOV A, #0x0F
+0002 F580              4     Mov P0, A
+0004 80FA              5     jmp LABEL1
+                       6     
+0006                   7     wait:
+0006 78FF              8     mov R0, #255
+0008 79FF              9     mov R1, #255
+000A 7AFF             10     mov R2, #255
+000C                  11     out_outer_loop:
+000C 1A               12     dec R2
+000D                  13     outer_loop:
+000D 19               14     dec R1
+000E                  15     inner_loop:
+000E 18               16     dec R0
+000F B800FC           17     cjne R0, #0, inner_loop
+0012 78FF             18     mov R0, #255
+0014 B900F6           19     cjne R1, #0, outer_loop
+0017 79FF             20     mov R1, #255
+0019                  21     cjne R2, #0, outer_outer_loop
+*** ______________________________________^
+*** ERROR #A45 IN 21 (LED_Taste.a51, LINE 21): UNDEFINED SYMBOL (PASS-2)
+001C 22               22     RET
+                      23     
+                      24     END
+A51 MACRO ASSEMBLER  LED_TASTE                                                            05/10/2022 15:01:17 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+INNER_LOOP . . . .  C ADDR   000EH   A   
+LABEL1 . . . . . .  C ADDR   0000H   A   
+OUTER_LOOP . . . .  C ADDR   000DH   A   
+OUTER_OUTER_LOOP .    ----   -----       
+OUT_OUTER_LOOP . .  C ADDR   000CH   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+WAIT . . . . . . .  C ADDR   0006H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 1 ERROR(S)

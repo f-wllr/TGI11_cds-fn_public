@@ -1,0 +1,85 @@
+@font-face { font-family: SoT-main; src: url('Fonts_brushTipTexe.ttf'); }
+@font-face { font-family: SoT-second; src: url('Fonts_ManuskriptAntiquaD.ttf'); }
+@font-face { font-family: SoT-third; src: url('Fonts_WindlassExtended.ttf'); }
+
+a:link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+  
+a:visited {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(081, 154, 186);
+    text-decoration: underline;
+}
+
+body {
+    background-color: rgb(035, 036, 046);
+}
+
+h1 {
+    font-size: 60px;
+    font-family: SoT-main, Arial;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size: 40px;
+    font-family: SoT-third, Arial;
+    color:rgb(255, 255, 255);
+}
+
+#border {
+    width: 1600px;
+}
+
+#title {
+    width: 30%;
+    float: left;
+    text-align: center;
+    background-color: rgb(035, 036, 046);
+}
+
+#menue {
+    text-align: center;
+}
+
+#main-content {
+    font-family: SoT-second;
+    color: rgb(255, 255, 255);
+}
+
+#pic-one {
+    width: 100%;
+}
+
+.header {
+    background-color: rgb(035, 036, 046);
+    height: 3%;
+    width: 1600px;
+}
+
+.menue {
+    background-color: rgb(035, 036, 046);
+    float: left;
+    height: 3%;
+    width: 20% 
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 1600px;
+}
+
+.invisible {
+    color: rgb(035, 036, 046);
+}
+
+.small {
+    font-size: 13px;
+}

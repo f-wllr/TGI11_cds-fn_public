@@ -1,0 +1,11 @@
+dunkelblau: rgb:        rgb(035, 038, 046);
+helleres blau: rgb:     rgb(046, 050, 061);
+türkis: rgb:            rgb(081, 154, 186);
+orange: rgb:            rgb(238, 093, 058);
+dunkelgelb: rgb:        rgb(210, 156, 018);
+mintgrün: rgb:          rgb(005, 229, 184);
+pink: rgb:              rgb(249, 038, 114);
+grün: rgb:              rgb(135, 224, 092);
+gelb: rgb:              rgb(225, 230, 109);
+
+Color-theme: Andromeda

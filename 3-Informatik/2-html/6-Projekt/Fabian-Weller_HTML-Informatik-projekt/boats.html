@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sea of Thieves Wiki - Schiffe</title>
+        <link rel="stylesheet" type="text/css" href="style-main.css">
+        <link rel="icon" href="Pictures\logo_f-wllr_selfmade_round-kl.png">
+          </head>
+    
+    <body>
+      <!--Head-->
+      <div id="border">
+        <div  class="header" id="header">
+          <div id="title">
+            <h1><a href=main.html>Sea of Thieves</a></h1>
+          </div>
+          <div id="menue">
+            <div class="menue">
+              <h2><a href=boats.html>Schiffe</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=weapons.html>Waffen</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=food.html>Nahrung</a></h2>
+            </div>
+          </div>
+        </div>
+
+        <!--"normal" main content-->
+        <div id="main-content" class="content">
+            <img id="pic-one" src="Pictures\29095558208_9cc9ecc382_o.jpg">
+          <p>
+            In diesem Artikel werden die unterschiedlichen Schiffe behandelt
+          </p>
+
+          <br><br><br>
+
+          <p>
+            Es gibt in Sea of Thieves verschiedene Arten von Schiffen, welche sich in ihrer größe unterscheiden.<br><br>
+            <img src="Pictures\Galeon.png"><br>
+            Die Galeone hat pltz für 4 Crew mitglieder und auf jeder Seite 4 Kanonen. Es ist das größteSChiff und am schwersten zu fahren.<br><br>
+            <img src="Pictures\Brigantine_side.webp"><br>
+            Der Zweimaster hat platz für zwei Crew mitglieder und auf jeder Seite 2 Kanonen. Es ist vonn allen das wendigste Schiff und bei richtigem Wind am schnellsten.<br><br>
+            <img src="Pictures\Sloop_side.webp"><br>
+            Die Schaluppe ist das kleinste Schiff und bietet Platz für ein bis zwei Crew mitglieder. Auf jeder seite befindet sich eine Kanone.
+          </p>
+       </div>
+      </div>
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        //var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > header.offsetTop) {
+            header.classList.add("sticky");
+            console.log("added class sticky");
+          } else {
+            header.classList.remove("sticky");
+            console.log("removed class sticky");
+          }
+        }
+      </script>
+    </body>
+
+</html>

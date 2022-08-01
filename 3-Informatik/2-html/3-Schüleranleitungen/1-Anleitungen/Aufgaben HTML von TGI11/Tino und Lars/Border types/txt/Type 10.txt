@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	<title> Body-type 10 </title>
+
+	</head>
+
+	<body>
+
+<h1>Verwendung von <code>border</code></h1>
+<div>thin</div>
+<div class="one">medium</div>
+
+		
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<title>Smiley</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+			    text-align: center;
+				background-color: rgb(035, 038, 046);
+			}
+			
+			
+			img {
+			        width: 200px;
+			        margin: 50px;
+			    }
+
+		</style>
+	</head>
+	
+	<body>
+
+		<!-- +++++++++++++++++++ -->
+		<!-- +    HTML-TEIL    + -->
+		<!-- +++++++++++++++++++ -->
+
+		<img id="smiley" src="smiley1.png">
+
+		<br>
+
+		<input onclick="fröhlich()" type="button" value="fröhlich">
+		<input onclick="traurig()" type="button" value="traurig">
+
+		
+
+
+		<!-- +++++++++++++++++++ -->
+		<!-- + JAVASCRIPT-TEIL + -->
+		<!-- +++++++++++++++++++ -->
+
+		<script>
+		function fröhlich() {
+			imgObj = document.getElementById("smiley")
+			imgObj.setAttribute("src", "smiley1.png")
+			
+		}
+		function traurig() {
+			imgObj = document.getElementById("smiley")
+			imgObj.setAttribute("src", "smiley2.png")
+			
+		}
+		</script>
+		
+	</body>
+	
+</html>

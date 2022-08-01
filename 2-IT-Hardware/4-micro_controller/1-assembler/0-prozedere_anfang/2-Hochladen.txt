@@ -1,0 +1,5 @@
+1. Flip starten
+2. Select Target Device: "AT89C5131"
+3. Select Communication Medium: "USB"
+4. Über "File -> load hex file" Hex File laden
+5. "Run"

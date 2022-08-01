@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    
+     <title> Text für die Browser-Titelliste </title>
+
+  </head>
+
+
+ <body>
+
+
+    <h1>Überschrift am größten</h1>            
+    <p>Absatz nach der Überschrift</p>
+    <h2>Überschrift größer</h2>                
+
+//größere es geht von h1 bis h6 jeweils vor und nach dem text 
+
+    <ul>
+<li>spazieren</li>
+<li>essen</li>
+<li>autofahren</li>
+<li>tanzkurs</li>
+    </ul>
+
+//Eine liste als stich punkte da stellen ungeordnet
+
+    <ol>
+<li>spazieren</li>
+<li>essen</li>
+<li>autofahren</li>
+<li>tanzkurs</li>
+    </ol>
+
+//Eine liste als stich punkte da stellen geordnet alles was innerhalb li steht wird mit Zahlen gepordnet
+<p><ul>
+<li><em> mit "em" können sie schriften kursiv anzeigen lassen</em></li>
+<li><strong> mit "strong" können sie schriften fett anzeigen lassen</strong></li>
+<li><strong><em> wenn sie "em" und "strong" zusammen verwenden können sie es einschachteln und fett kursiv anzeigen lassen dass selbe gilt für "ol" als auch "ul"</em></strong></li>
+</ul></p>
+
+    
+    
+ </body>
+
+</html>

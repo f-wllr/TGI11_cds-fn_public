@@ -1,0 +1,3 @@
+".\Objects\LED_Taste.obj" 
+TO ".\Objects\LED-Taste" 
+PRINT(".\Listings\LED-Taste.m51") RAMSIZE(256) 

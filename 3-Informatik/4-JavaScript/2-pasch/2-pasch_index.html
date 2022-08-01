@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<title>Pasch</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+			    text-align: center;
+				background-color: rgb(035, 038, 046);
+			}
+			
+			
+			img {
+			        width: 200px;
+			        height: 200px;
+			        margin: 50px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+
+		<!-- +++++++++++++++++++ -->
+		<!-- +    HTML-TEIL    + -->
+		<!-- +++++++++++++++++++ -->
+
+
+		<input type="button" onclick="start()" value="Start">
+		<input type="button" onclick="stop()" value="Stop">
+
+		<br>
+
+		<img id="z1" src="0.png">
+		<img id="z2" src="0.png">
+		<img id="z3" src="0.png">
+		<img id="kreuz" src="haken.png">
+		<div id="correct">
+			0
+		</div>
+		von
+		<div id="counter">
+			0
+		</div>
+		geglückten Versuchen
+		
+
+
+		<!-- +++++++++++++++++++ -->
+		<!-- + JAVASCRIPT-TEIL + -->
+		<!-- +++++++++++++++++++ -->
+
+		<script>
+			counter = 0
+			correct = 0
+
+			function go() {
+				zz1 = parseInt((Math.random()*10)+0)	// hier wird eine Zufallszahls zwischen 0 und 9 erzeugt
+				
+			    //1. Relevantes JS-Objekt ermitteln
+			    imgObj1=document.getElementById('z1')
+			    
+			    //2. ...und src-Attribut neu setzen
+			    imgObj1.setAttribute("src", zz1 + ".png")
+
+				 
+				zz2 = parseInt((Math.random()*10)+0)
+			    imgObj2=document.getElementById('z2')
+			    imgObj2.setAttribute("src", zz2 + ".png")
+
+
+				zz3 = parseInt((Math.random()*10)+0)
+			    imgObj4=document.getElementById('z3')
+			    imgObj4.setAttribute("src", zz3 + ".png")
+
+
+				imgObj3 = document.getElementById('kreuz')
+				if(zz1 == zz2 && zz2 == zz3){
+					imgObj3.setAttribute("src", "haken.png")
+					correct++
+					//stop()
+				} else {
+					imgObj3.setAttribute("src", "kreuz.png")
+				}
+
+				
+				counter++
+				imgObj5 = document.getElementById('counter').innerHTML = counter
+				imgObj6 = document.getElementById('correct').innerHTML = correct
+			}
+
+			function start() {
+				timer = setInterval( go, 1 )
+			}
+
+			function stop() {
+				clearInterval( timer )
+			}
+					
+		</script>
+		
+	</body>
+	
+</html>

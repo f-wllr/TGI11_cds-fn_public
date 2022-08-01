@@ -1,0 +1,129 @@
+public class MeineArrayBib {
+
+    static int gibMinimum(int[] pArray){
+        int min = 2147483647;
+        for(int i = 0; i < pArray.length; i++){
+            if(pArray[i] < min){
+                min = pArray[i];
+            }
+        }
+
+        return min;
+    }
+
+    static int gibMaximum(int[] pArray){
+        int max = -2147483647;
+        for(int i = 0; i < pArray.length; i++){
+            if(pArray[i] >= max){
+                max = pArray[i];
+            }
+        }
+
+        return max;
+    }
+
+    static int gibMinPos (int[] pArray){
+        //int min = 2147483647;
+        int min = pArray[0];
+        int index = 0;
+        for(int i = 0; i < pArray.length; i++){
+            if(pArray[i] < min){
+                min = pArray[i];
+                index = i;
+            }
+        }
+        
+        return index;
+    }
+
+    static int gibMaxPos(int[] pArray){
+        int max = -2147483647;
+        int index = 0;
+        for(int i = 0; i < pArray.length; i++){
+            if(pArray[i] >= max){
+                max = pArray[i];
+                index = i;
+            }
+        }
+
+        return index;
+    }
+
+    static int suche(int pGesucht, int[] pArray){
+        int index = -1;
+        for(int i = 0; i < pArray.length; i++){
+            if(pArray[i] == pGesucht){
+                index = i;
+            }
+        }
+        
+        return index;
+    }
+
+    static void tausche(int[] pArray, int pPos1, int pPos2){
+          int tmp = pArray[pPos1];
+            pArray[pPos1] = pArray[pPos2];
+            pArray[pPos2] = tmp;
+            /*
+            for(int i = 0; i < pArray.length; i++){
+                System.out.println(pArray[i]);
+            }*/
+    }
+
+    static void bubblesort(double[] pArray){
+        boolean sort = true;
+        double tausch;
+
+        while(sort){
+            sort = false;
+            for (int i = 0; i < pArray.length - 1; i++){
+                if (pArray[i] > pArray[i + 1]){
+                    tausch = pArray[i];
+                    pArray[i] = pArray[i + 1];
+                    pArray[i + 1] = tausch;
+                    sort = true;
+                }
+            }
+        }
+    }
+
+    static int gibMinPos (double[] pArray, int pAbPos){
+        double min = 2147483647;
+        int index = 0;
+        for(int i = pAbPos; i < pArray.length; i++){
+            if(pArray[i] < min){
+                min = pArray[i];
+                index = i;
+            }
+        }
+        
+        return index;
+    }
+
+    static void tauscheD(double[] pArray, int pPos1, int pPos2){
+        double tmp = pArray[pPos1];
+          pArray[pPos1] = pArray[pPos2];
+          pArray[pPos2] = tmp;
+          /*
+          for(int i = 0; i < pArray.length; i++){
+              System.out.println(pArray[i]);
+          }*/
+    }
+
+    static void selectionsort(double[] pArray){
+      /*  for(int i = 0; i < pArray.length - 2; i++){
+            tauscheD(pArray, gibMinPos(pArray, i), i);
+        }*/
+        for(int i = 0; i < pArray.length - 1; i++){
+            int min = i;
+            for(int j = i + 1; j < pArray.length; j++){
+                if(pArray[j] < pArray[min]){
+                    min = j;
+                }
+            }
+            double vertausche = pArray[min];
+            pArray[min] = pArray[i];
+            pArray[i] = vertausche;
+        }
+    }
+}

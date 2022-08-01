@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="de">
+	<head>
+		<title>Passwort</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+		
+		body {
+			margin: 24px;
+		}
+		
+		#schalter {
+			margin-top: 24px;
+		}
+		
+		</style>
+	</head>
+	
+	<body>
+
+		<!-- +++++++++++++++++++ -->
+		<!-- +    HTML-TEIL    + -->
+		<!-- +++++++++++++++++++ -->
+
+		<h1>Passwortfeld</h1>
+	
+		<input id="pwfeld" type="password" onchange=""><br>
+		
+		<label for="schalter">Passwort sichtbar</label>
+		<input type="checkbox" id="schalter" onchange="changePWVisibility()">
+		
+
+
+		<!-- +++++++++++++++++++ -->
+		<!-- + JAVASCRIPT-TEIL + -->
+		<!-- +++++++++++++++++++ -->
+
+		<script>
+		function changePWVisibility() {
+			if (document.getElementById("schalter").checked == true){
+				pwfeld.type = "text"
+			} else if (document.getElementById("schalter").checked == false){
+				pwfeld.type = "password"
+			}
+		}
+
+		</script>
+		
+	</body>
+	
+</html>

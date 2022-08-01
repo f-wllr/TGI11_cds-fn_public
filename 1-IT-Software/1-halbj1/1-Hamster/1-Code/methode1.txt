@@ -1,0 +1,10 @@
+void main(){
+	while(vornFrei()){
+		vorUndNimm();
+	}
+}
+
+void vorUndNimm(){
+	vor();
+	nimm();
+}

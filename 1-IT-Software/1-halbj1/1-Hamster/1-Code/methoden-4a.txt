@@ -1,0 +1,41 @@
+void main(){
+	nFelderVor(8);	
+}
+
+
+
+void rechtsUm(){
+	for(int i=0;i<3;i++){
+		linksUm();
+	}
+}
+
+void nimmAlle(){
+	while(kornDa()){
+		nimm();
+	}
+}
+
+void ganzVor(){
+	while(vornFrei()){
+		vor();
+	}
+}
+
+void dreiFelderVor(){
+	for (int i=0; i<3; i++){
+		vor();
+	}
+}
+
+void nFelderVor(int anzFelder){
+	for(int i=0; i<anzFelder; i++){
+		vor();
+	}
+}
+
+void gibNKörner(int anzKörner){
+	for(int i=0; i<anzKörner; i++){
+		gib();
+	}
+}

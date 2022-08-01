@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+
+		<title> Border Type 0 </title>
+
+	</head>
+
+	<body>
+		
+
+	.
+
+
+	</body>
+
+</html>

@@ -1,0 +1,95 @@
+A51 MACRO ASSEMBLER  16LEDS                                                               10/26/2021 13:37:39 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Hexfiles\16LEDs.obj
+ASSEMBLER INVOKED BY: C:\Program Files\Keil_uVision\C51\BIN\A51.EXE 16LEDs.a51 SET(SMALL) DEBUG PRINT(.\Listings\16LEDs.
+                      lst) OBJECT(.\Hexfiles\16LEDs.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+                       1     
+                       2     
+0000                   3     Start:
+0000 7401              4     MOV A, #1   ; Kommentar
+0002 F4                5     CPL A
+0003 F580              6     MOV P0, A        
+0005 113A              7     ACALL wait
+                       8     
+0007 7402              9     MOV A, #2   ; Kommentar
+0009 F4               10     CPL A
+000A F580             11     MOV P0, A        
+000C 113A             12     ACALL wait
+                      13     
+000E 7404             14     MOV A, #4   ; Kommentar
+0010 F4               15     CPL A
+0011 F580             16     MOV P0, A        
+0013 113A             17     ACALL wait
+                      18     
+0015 7408             19     MOV A, #8   ; Kommentar
+0017 F4               20     CPL A
+0018 F580             21     MOV P0, A        
+001A 113A             22     ACALL wait
+                      23     
+001C 7410             24     MOV A, #16   ; Kommentar
+001E F4               25     CPL A
+001F F580             26     MOV P0, A        
+0021 113A             27     ACALL wait
+                      28     
+0023 7420             29     MOV A, #32   ; Kommentar
+0025 F4               30     CPL A
+0026 F580             31     MOV P0, A        
+0028 113A             32     ACALL wait
+                      33     
+002A 7440             34     MOV A, #64   ; Kommentar
+002C F4               35     CPL A
+002D F580             36     MOV P0, A        
+002F 113A             37     ACALL wait
+                      38     
+0031 7480             39     MOV A, #128   ; Kommentar
+0033 F4               40     CPL A
+0034 F580             41     MOV P0, A        
+0036 113A             42     ACALL wait
+                      43     
+0038 80C6             44     jmp Start
+                      45     
+003A                  46     wait:
+003A 78FF             47     mov R0, #255
+003C 79FF             48     mov R1, #255
+003E 7A01             49     mov R2, #1
+0040                  50     outer_outer_loop:
+0040 1A               51     dec R2
+0041                  52     outer_loop:
+0041 19               53     dec R1
+0042                  54     inner_loop:
+0042 18               55     dec R0
+0043 B800FC           56     cjne R0,#0, inner_loop
+0046 78FF             57     mov R0, #255
+A51 MACRO ASSEMBLER  16LEDS                                                               10/26/2021 13:37:39 PAGE     2
+
+0048 B900F6           58     cjne R1,#0, outer_loop
+004B 79FF             59     mov R1,#255 
+004D BA00F0           60     cjne R2,#0, outer_outer_loop
+0050 22               61     RET
+                      62     
+                      63     End
+A51 MACRO ASSEMBLER  16LEDS                                                               10/26/2021 13:37:39 PAGE     3
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+INNER_LOOP . . . .  C ADDR   0042H   A   
+OUTER_LOOP . . . .  C ADDR   0041H   A   
+OUTER_OUTER_LOOP .  C ADDR   0040H   A   
+P0 . . . . . . . .  D ADDR   0080H   A   
+START. . . . . . .  C ADDR   0000H   A   
+WAIT . . . . . . .  C ADDR   003AH   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

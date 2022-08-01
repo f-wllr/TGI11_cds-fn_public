@@ -1,0 +1,11 @@
+void main(){
+	while(!kornDa()){
+	linksUm();
+		if(vornFrei()){
+			vor();
+		}
+		if(!vornFrei()){
+			linksUm();	
+		}
+	}
+}

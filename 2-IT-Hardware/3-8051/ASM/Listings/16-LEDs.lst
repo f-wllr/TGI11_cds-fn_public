@@ -1,0 +1,30 @@
+A51 MACRO ASSEMBLER  16_LEDS                                                              10/25/2021 09:10:18 PAGE     1
+
+
+MACRO ASSEMBLER A51 V8.2.7.0
+OBJECT MODULE PLACED IN .\Hexfiles\16-LEDs.obj
+ASSEMBLER INVOKED BY: C:\Program Files\Keil_uVision\C51\BIN\A51.EXE 16-LEDs.a51 SET(SMALL) DEBUG PRINT(.\Listings\16-LED
+                      s.lst) OBJECT(.\Hexfiles\16-LEDs.obj) EP
+
+LOC  OBJ            LINE     SOURCE
+
+0000                   1     Start:
+0000 758006            2     MOV P0, #6      ; Kommentar
+                       3     ;jmp Start
+                       4     End
+A51 MACRO ASSEMBLER  16_LEDS                                                              10/25/2021 09:10:18 PAGE     2
+
+SYMBOL TABLE LISTING
+------ ----- -------
+
+
+N A M E             T Y P E  V A L U E   ATTRIBUTES
+
+P0 . . . . . . . .  D ADDR   0080H   A   
+START. . . . . . .  C ADDR   0000H   A   
+
+
+REGISTER BANK(S) USED: 0 
+
+
+ASSEMBLY COMPLETE.  0 WARNING(S), 0 ERROR(S)

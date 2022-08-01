@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sea of Thieves Wiki - Schiffe</title>
+        <link rel="stylesheet" type="text/css" href="style-main.css">
+        <link rel="icon" href="Pictures\logo_f-wllr_selfmade_round-kl.png">
+          </head>
+    
+    <body>
+      <!--Head-->
+      <div id="border">
+        <div  class="header" id="header">
+          <div id="title">
+            <h1><a href=main.html>Sea of Thieves</a></h1>
+          </div>
+          <div id="menue">
+            <div class="menue">
+              <h2><a href=boats.html>Schiffe</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=weapons.html>Waffen</a></h2>
+            </div>
+            <div class="menue">
+              <h2><a href=food.html>Nahrung</a></h2>
+            </div>
+          </div>
+        </div>
+
+        <!--"normal" main content-->
+        <div id="main-content" class="content">
+            <img id="pic-one" src="Pictures\29095558208_9cc9ecc382_o.jpg">
+          <p>
+            In diesem Artikel werden die verschiedenen Waffen behandelt
+          </p>
+
+          <br><br><br>
+
+          <p>
+            Es gibt in Sea of Thieves drei verschiedene Schusswaffen und ein Schwert. Für jede Waffe ist es möglich durch eine virtuelle Währung kosmetische Veränderungen zu kaufen.<br>
+            In folgender Tabelle werden die unterschiedlichen Waffen aufgelistet.<br><br>
+          </p>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Schaden</th>
+              <th>Munition</th>
+              <th>Bild</th>
+            </tr>
+            <tr>
+              <td>Schwert (normal)</td>
+              <td>20% pro Schlag</td>
+              <td>unendlich</td>
+              <td><img src="Pictures\weapons\sword.png"></td>
+             </tr>
+             <tr>
+               <td>Schwert (gestärkt)</td>
+               <td>50% pro Schlag</td>
+               <td>unendlich</td>
+               <td><img src="Pictures\weapons\sword.png"></td>
+              </tr>
+             <tr>
+              <td>Donnerbüchse</td>
+              <td>15% pro kleine Kugel</td>
+              <td>5</td>
+              <td><img src="Pictures\weapons\blunder.png"></td>
+            </tr>
+            <tr>
+              <td>Pistole</td>
+              <td>50% pro Schuss</td>
+              <td>5</td>
+              <td><img src="Pictures\weapons\pistol.png"></td>
+            </tr>
+            <tr>
+              <td>Sniper</td>
+              <td>70% pro Schuss</td>
+              <td>5</td>
+              <td><img src="Pictures\weapons\sniper.png"></td>
+            </tr>
+          </table>
+          
+          <br>
+          
+        <br>
+        
+        <br>
+        
+      <br>
+      
+      <br>
+      
+    <br>
+      </div>
+      </div>
+      <script>
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("header");
+
+        // Get the offset position of the navbar
+        //var sticky = header.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+          if (window.pageYOffset > header.offsetTop) {
+            header.classList.add("sticky");
+            console.log("added class sticky");
+          } else {
+            header.classList.remove("sticky");
+            console.log("removed class sticky");
+          }
+        }
+      </script>
+    </body>
+
+</html>

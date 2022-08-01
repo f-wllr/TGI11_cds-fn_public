@@ -1,0 +1,12 @@
+/*CSS für Info-KA von Fabian Weller*/
+
+h1 {
+	color: #0000ff;
+	font-size: 40px;
+}
+
+#text {
+	background-color: #ff0000;
+	font-family: arial;
+	border: 5px dotted #00ff00;
+}

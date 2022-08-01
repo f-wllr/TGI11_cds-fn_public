@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+
+		<title> Border Type 9 </title>
+<style>
+
+		.nine {
+			border: 1em dashed red;
+			border-radius: 50%;
+			}
+
+
+		div {
+			float: left;
+			width: 5em;
+			height: 5em;
+			margin: 1em;
+			background-color: beige;
+			text-align: center;
+			}
+
+		
+</style>
+	</head>
+
+	<body>
+		
+
+		<h1>Verwendung von <code>border</code></h1>
+		<div class="nine">9</div>
+		
+
+	</body>
+
+</html>

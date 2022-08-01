@@ -1,0 +1,39 @@
+void main() {
+
+}
+
+int nimmUndZähle(){
+	int anzahl = 0;
+	while(kornDa()){
+		nimm();
+		anzahl = anzahl + 1;
+	}
+	System.out.println(anzahl + " Körner");
+	return anzahl; // z.B. 1
+}
+
+int zähleFelder(){
+	int anzFelder = 1;
+	while(vornFrei()){
+		vor();
+		anzFelder++;
+	}
+	System.out.println(anzFelder + " Felder");
+	return anzFelder;
+}
+
+void rechtsUm(){
+	linksUm();
+	linksUm();
+	linksUm();
+}
+
+boolean rechtsFrei(){
+	rechtsUm();
+	boolean vorneFrei = false;
+	if(vornFrei()){
+		vorneFrei = true;
+	}
+	linksUm();
+	return vorneFrei;
+}

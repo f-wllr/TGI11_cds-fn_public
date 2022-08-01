@@ -1,0 +1,25 @@
+void main() {
+boolean end=false;
+int endcount=0;
+ while(end==false){
+	if(vornFrei()){
+		vor();
+	}
+	
+	if(!vornFrei()){
+		linksUm();
+		if(vornFrei()){
+			vor();
+			endcount++;
+		}else if(!vornFrei()){
+			linksUm();
+			linksUm();
+			endcount++;
+		}
+		endcount--;
+		if (endcount!=0){
+		end=true;
+		}
+	}
+ }
+}

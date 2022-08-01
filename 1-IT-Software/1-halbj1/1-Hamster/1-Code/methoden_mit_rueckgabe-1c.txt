@@ -1,0 +1,18 @@
+void main() {
+ 	int anzKörner = 0;
+	while(vornFrei()){
+		vor();
+		anzKörner = anzKörner + nimmUndZähle();
+	}
+	System.out.println("Insgesamt: " + anzKörner + " Körner");
+}
+
+int nimmUndZähle(){
+	int anzahl = 0;
+	while(kornDa()){
+		nimm();
+		anzahl = anzahl + 1;
+	}
+	System.out.println(anzahl + " Körner");
+	return anzahl; // z.B. 1
+}

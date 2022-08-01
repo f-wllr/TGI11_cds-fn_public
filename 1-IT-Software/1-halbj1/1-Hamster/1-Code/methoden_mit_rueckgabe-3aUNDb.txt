@@ -1,0 +1,36 @@
+void main() {
+	vor();
+	gibNKoerner(3);
+	vor();
+	gibNKoerner(4);
+	vor();
+	gibNKoerner(5);
+}
+
+void rechtsUm(){
+	linksUm();
+	linksUm();
+	linksUm();
+}
+
+boolean rechtsFrei(){
+	rechtsUm();
+	boolean vorneFrei = false;
+	if(vornFrei() == true){
+		vorneFrei = true;
+	}
+	linksUm();
+	return vorneFrei;
+}
+
+boolean gibNKoerner(int anzahl){
+	boolean geklappt = false;
+	
+	int gelegteKoerner = 0;
+	while(gelegteKoerner < anzahl){
+		gib();
+		gelegteKoerner++;
+	}
+	geklappt = true;
+	return geklappt;
+}

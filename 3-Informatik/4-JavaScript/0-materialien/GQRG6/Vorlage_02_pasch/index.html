@@ -1,0 +1,57 @@
+<html>
+	<head>
+		<title>Pasch</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body {
+			    text-align: center;
+			}
+			
+			
+			img {
+			        width: 200px;
+			        height: 200px;
+			        margin: 50px;
+			}
+			
+		</style>
+	</head>
+	
+	<body>
+
+		<!-- +++++++++++++++++++ -->
+		<!-- +    HTML-TEIL    + -->
+		<!-- +++++++++++++++++++ -->
+
+
+		<input type="button" onclick="go()" value="Go">
+
+		<br>
+
+		<img id="z1" src="0.png">
+		
+
+
+		<!-- +++++++++++++++++++ -->
+		<!-- + JAVASCRIPT-TEIL + -->
+		<!-- +++++++++++++++++++ -->
+
+		<script>
+
+			function go() {
+				
+				zz1 = parseInt((Math.random()*10)+0)	// hier wird eine Zufallszahls zwischen 0 und 9 erzeugt
+				
+			    //1. Relevantes JS-Objekt ermitteln
+			    imgObj1=document.getElementById('z1')
+			    
+			    //2. ...und src-Attribut neu setzen
+			    imgObj1.setAttribute("src", zz1 + ".png")
+			}
+					
+		</script>
+		
+	</body>
+	
+</html>

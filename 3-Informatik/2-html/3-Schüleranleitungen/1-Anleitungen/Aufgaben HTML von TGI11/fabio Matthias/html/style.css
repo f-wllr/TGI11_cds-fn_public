@@ -1,0 +1,30 @@
+ul {
+    list-style-type: none;
+    width: 30em;
+  }
+
+li h3 {
+    font: bold 1.2em/1.5 Helvetica, Verdana, sans-serif;
+  }
+  
+li img {
+    float: left;
+    margin: 0 15px 0 0;
+    width: 5em;
+  }
+
+  li p {
+    font: 100 0.75em/1.5 Georgia, Times New Roman, serif;
+  }
+
+  li {
+    padding: 10px;
+    overflow: auto;
+  }
+  
+  li:hover {
+    background: #F1F3F4;
+    cursor: pointer;
+  }
+
+ 

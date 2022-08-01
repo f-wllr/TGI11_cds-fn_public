@@ -1,0 +1,8 @@
+void main() {
+	linksUm();
+	linksUM();
+	vor();
+	vor();
+	nimm();
+}
+
